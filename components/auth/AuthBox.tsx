@@ -19,7 +19,7 @@ const AuthBox: React.FC<IData> = ({ text, title, link, linkPath }) => {
   const [isSelected, setIsSelected] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
   return (
-    <Card className="p-7 bg-opacity-60 border border-white/40 max-w-lg w-full flex flex-col items-center">
+    <Card className="p-7 bg-opacity-60 backdrop-blur-sm border border-white/40 max-w-lg w-full flex flex-col items-center">
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold">
         {title}
       </h1>
