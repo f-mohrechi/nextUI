@@ -11,9 +11,10 @@ interface IData {
   text: string;
   title: string;
   link: string;
+  linkPath: string;
 }
 
-const AuthBox: React.FC<IData> = ({ text, title, link }) => {
+const AuthBox: React.FC<IData> = ({ text, title, link, linkPath }) => {
   const [isVisible, setIsVisible] = React.useState(false);
   const [isSelected, setIsSelected] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
@@ -60,7 +61,7 @@ const AuthBox: React.FC<IData> = ({ text, title, link }) => {
             </Checkbox>
           </div>
 
-          {title === "login" ? (
+          {title === "Login" ? (
             <div className="mt-2 sm:mt-0">
               <Link href="#" color="foreground" underline="always">
                 Forgot password?
@@ -84,12 +85,12 @@ const AuthBox: React.FC<IData> = ({ text, title, link }) => {
           <p>{text}</p>
           &nbsp;
           <Link
-            href={link}
+            href={linkPath}
             color="foreground"
             underline="always"
             className="mt-1 sm:mt-0"
           >
-            {title}
+            {link}
           </Link>
         </div>
       </div>
