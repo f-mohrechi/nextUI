@@ -1,5 +1,5 @@
 import AuthBox from "@/components/auth/AuthBox";
 
 export default function RegisterPage() {
-  return <AuthBox text={"Register"} />;
+  return <AuthBox title={"Register"} text={"Already have an account?"} link={""} />;
 }
