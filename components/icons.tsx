@@ -1,6 +1,23 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
 
+export const GrayPlusIcon: React.FC<IconSvgProps> = (props) => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M9 1.5V16.5M16.5 9L1.5 9"
+      stroke="#1F2937"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
 export const EyeSlashFilledIcon: React.FC<IconSvgProps> = (props) => (
   <svg
     aria-hidden="true"

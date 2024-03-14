@@ -1,4 +1,5 @@
 // ParentComponent.tsx
+import { GrayPlusIcon } from "@/components/icons";
 import TableView from "@/components/table/Table";
 import React from "react";
 
@@ -45,7 +46,14 @@ const UserPage: React.FC = () => {
     },
   ];
 
-  return <TableView rows={rows} columns={columns} />;
+  return (
+    <TableView
+      rows={rows}
+      columns={columns}
+      title={"users"}
+      icon={<GrayPlusIcon />}
+    />
+  );
 };
 
 export default UserPage;
