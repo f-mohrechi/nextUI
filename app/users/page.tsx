@@ -1,20 +1,7 @@
-// ParentComponent.tsx
 import { GrayPlusIcon } from "@/components/icons";
 import TableView from "@/components/table/Table";
 import React from "react";
-
-interface IRow {
-  key: string;
-  name: string;
-  role: string;
-  position: string;
-  email: string;
-}
-
-interface IColumn {
-  key: string;
-  label: string;
-}
+import { IColumn, IRow } from "./types";
 
 const UserPage: React.FC = () => {
   const rows: IRow[] = [
