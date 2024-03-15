@@ -6,13 +6,7 @@ import { Button } from "@nextui-org/button";
 import { Checkbox } from "@nextui-org/checkbox";
 import { EyeSlashFilledIcon, EyeFilledIcon } from "@/components/icons";
 import { Link } from "@nextui-org/link";
-
-interface IData {
-  text: string;
-  title: string;
-  link: string;
-  linkPath: string;
-}
+import { IData } from "./types";
 
 const AuthBox: React.FC<IData> = ({ text, title, link, linkPath }) => {
   const [isVisible, setIsVisible] = React.useState(false);
