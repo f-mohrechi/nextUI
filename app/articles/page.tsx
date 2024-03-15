@@ -1,20 +1,6 @@
-// ParentComponent.tsx
-import { GrayPlusIcon } from "@/components/icons";
 import TableView from "@/components/table/Table";
 import React from "react";
-
-interface IRow {
-  key: string;
-  author: string;
-  title: string;
-  language: string;
-  date: string;
-}
-
-interface IColumn {
-  key: string;
-  label: string;
-}
+import { IColumn, IRow } from "./types";
 
 const AritclesPage: React.FC = () => {
   const rows: IRow[] = [
