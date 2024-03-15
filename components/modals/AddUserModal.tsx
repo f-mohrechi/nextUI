@@ -7,9 +7,7 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-  Checkbox,
   Input,
-  Link,
 } from "@nextui-org/react";
 import { MailIcon, PositionIcon, RoleIcon, UserIcon } from "../icons";
 

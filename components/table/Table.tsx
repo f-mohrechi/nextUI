@@ -10,36 +10,7 @@ import {
 } from "@nextui-org/react";
 import React from "react";
 import TableTitle from "./TableTitle";
-
-interface IRow {
-  key: string;
-}
-
-interface IUsersPageRow extends IRow {
-  name?: string;
-  role?: string;
-  position?: string;
-  email?: string;
-}
-
-interface IArticlesPageRow extends IRow {
-  author?: string;
-  title?: string;
-  language?: string;
-  date?: string;
-}
-
-interface IColumn {
-  key: string;
-  label: string;
-}
-
-interface ITable {
-  rows: (IUsersPageRow | IArticlesPageRow)[];
-  columns: IColumn[];
-  title: string;
-  icon?: React.ReactElement;
-}
+import { ITable } from "./types";
 
 const TableView: React.FC<ITable> = ({ rows, columns, title, icon }) => {
   return (
