@@ -1,5 +1,6 @@
-import { Button } from "@nextui-org/react";
+import { Button, useDisclosure } from "@nextui-org/react";
 import React from "react";
+import AddUserModal from "../modals/AddUserModal";
 
 interface IData {
   title: string;
@@ -7,6 +8,7 @@ interface IData {
 }
 
 const TableTitle: React.FC<IData> = ({ title, icon }) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <>
       <div className="flex items-center justify-between w-full mb-5">
@@ -14,6 +16,7 @@ const TableTitle: React.FC<IData> = ({ title, icon }) => {
 
         {icon && icon != null && (
           <Button
+            onPress={onOpen}
             isIconOnly
             variant="light"
             aria-label="Add new user"
@@ -23,6 +26,8 @@ const TableTitle: React.FC<IData> = ({ title, icon }) => {
           </Button>
         )}
       </div>
+
+      <AddUserModal isOpen={isOpen} onOpenChange={onOpenChange} />
     </>
   );
 };
