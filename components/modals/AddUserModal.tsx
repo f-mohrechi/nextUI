@@ -63,7 +63,7 @@ const AddUserModal: React.FC<ITable> = ({ isOpen, onOpenChange }) => {
                   variant="bordered"
                   key={"name"}
                   labelPlacement={"outside-left"}
-                  className="w-96 flex justify-between"
+                  className="w-full flex justify-between"
                   endContent={
                     <UserIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                   }
@@ -76,7 +76,7 @@ const AddUserModal: React.FC<ITable> = ({ isOpen, onOpenChange }) => {
                   label="Email"
                   labelPlacement={"outside-left"}
                   placeholder="Enter user's email"
-                  className="w-96 flex justify-between"
+                  className="w-full flex justify-between"
                   variant="bordered"
                   endContent={
                     <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
@@ -89,7 +89,7 @@ const AddUserModal: React.FC<ITable> = ({ isOpen, onOpenChange }) => {
                   label="Position"
                   labelPlacement={"outside-left"}
                   placeholder="Enter user's position"
-                  className="w-96 flex justify-between"
+                  className="w-full flex justify-between"
                   variant="bordered"
                   endContent={
                     <PositionIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
@@ -102,7 +102,7 @@ const AddUserModal: React.FC<ITable> = ({ isOpen, onOpenChange }) => {
                   label="Role"
                   labelPlacement={"outside-left"}
                   placeholder="Enter user's role"
-                  className="w-96 flex justify-between"
+                  className="w-full flex justify-between"
                   variant="bordered"
                   endContent={
                     <RoleIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />

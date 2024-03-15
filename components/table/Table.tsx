@@ -13,10 +13,20 @@ import TableTitle from "./TableTitle";
 
 interface IRow {
   key: string;
-  name: string;
-  role: string;
-  position: string;
-  email: string;
+}
+
+interface IUsersPageRow extends IRow {
+  name?: string;
+  role?: string;
+  position?: string;
+  email?: string;
+}
+
+interface IArticlesPageRow extends IRow {
+  author?: string;
+  title?: string;
+  language?: string;
+  date?: string;
 }
 
 interface IColumn {
@@ -25,10 +35,10 @@ interface IColumn {
 }
 
 interface ITable {
-  rows: IRow[];
+  rows: (IUsersPageRow | IArticlesPageRow)[];
   columns: IColumn[];
   title: string;
-  icon: React.ReactElement;
+  icon?: React.ReactElement;
 }
 
 const TableView: React.FC<ITable> = ({ rows, columns, title, icon }) => {

@@ -4,7 +4,7 @@ import AddUserModal from "../modals/AddUserModal";
 
 interface IData {
   title: string;
-  icon: React.ReactElement;
+  icon?: React.ReactElement;
 }
 
 const TableTitle: React.FC<IData> = ({ title, icon }) => {
